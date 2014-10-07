@@ -32,7 +32,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #ecf0f1;
   color: #333;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   line-height: 1.25;
   margin: 0;
   text-rendering: optimizeLegibility; }
@@ -132,7 +132,7 @@ input,
 label,
 select {
   display: block;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em; }
 
 /* line 16, /Users/George/ironyard/ruby/portfolio/source/stylesheets/base/_forms.scss */
@@ -160,7 +160,7 @@ select[multiple=multiple] {
   border-radius: 3px;
   border: 1px solid #DDD;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
@@ -269,320 +269,66 @@ input[type="submit"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 7, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-.centered-navigation {
-  background-color: #e74c3c;
-  border-bottom: 1px solid #e43321;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  height: 60px;
-  width: 100%;
-  z-index: 9999; }
-  /* line 29, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation .mobile-logo {
-    display: inline;
-    float: left;
-    max-height: 60px;
-    padding-left: 1em; }
-    /* line 35, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation .mobile-logo img {
-      max-height: 60px;
-      opacity: .6;
-      padding: .8em 0; }
-    @media screen and (min-width: 53.75em) {
-      /* line 29, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation .mobile-logo {
-        display: none; } }
-  /* line 46, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation .centered-navigation-menu-button {
-    color: rgba(51, 51, 51, 0.7);
+/* line 1, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_progressbar.css.scss */
+.progress-bar {
+  background-color: #dde4e6;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 0 3px 0 rgba(83, 107, 113, 0.15);
+  border-radius: 3px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 2px;
+  width: 50%; }
+  /* line 20, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_progressbar.css.scss */
+  .progress-bar > span.meter {
+    -webkit-animation: progress 0.7s linear infinite;
+    -moz-animation: progress 0.7s linear infinite;
+    animation: progress 0.7s linear infinite;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #c0392b;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%);
+    background-size: 40px 40px;
+    background-repeat: repeat-x;
+    border: 1px solid #81261d;
+    border-radius: 2px;
     display: block;
-    float: right;
-    font-weight: 700;
-    line-height: 60px;
-    margin: 0;
-    padding-right: 1em;
-    text-transform: uppercase; }
-    @media screen and (min-width: 53.75em) {
-      /* line 46, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation .centered-navigation-menu-button {
-        display: none; } }
-    /* line 60, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation .centered-navigation-menu-button:hover {
-      color: #333; }
-  /* line 67, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation .centered-navigation-wrapper {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: 999; }
-    /* line 15, /Users/George/ironyard/ruby/portfolio/source/stylesheets/bourbon/addons/_clearfix.scss */
-    .centered-navigation .centered-navigation-wrapper:after {
-      content: "";
-      display: table;
-      clear: both; }
-    /* line 15, /Users/George/ironyard/ruby/portfolio/source/stylesheets/bourbon/addons/_clearfix.scss */
-    .centered-navigation .centered-navigation-wrapper:after {
-      content: "";
-      display: table;
-      clear: both; }
-  /* line 74, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation ul.centered-navigation-menu {
-    -webkit-transform-style: preserve-3d;
-    clear: both;
-    display: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    width: 100%;
-    z-index: 99999; }
-    @media screen and (min-width: 53.75em) {
-      /* line 74, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation ul.centered-navigation-menu {
-        display: block;
-        text-align: center; } }
-  @media screen and (min-width: 53.75em) {
-    /* line 92, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation .nav-link:first-child {
-      margin-left: 2.2em; } }
-  /* line 98, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation ul li.nav-link {
-    background: #e74c3c;
-    display: block;
-    line-height: 60px;
-    overflow: hidden;
-    padding-right: 1em;
-    text-align: right;
-    width: 100%;
-    z-index: 9999; }
-    @media screen and (min-width: 53.75em) {
-      /* line 98, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation ul li.nav-link {
-        background: transparent;
-        display: inline;
-        line-height: 60px; }
-        /* line 113, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-        .centered-navigation ul li.nav-link a {
-          padding-right: 1em; } }
-    /* line 118, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation ul li.nav-link a {
-      color: rgba(51, 51, 51, 0.7);
-      display: inline-block; }
-      /* line 123, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation ul li.nav-link a:hover {
-        color: #333; }
-  /* line 129, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation li.logo.nav-link {
-    display: none;
-    line-height: 0; }
-    @media screen and (min-width: 53.75em) {
-      /* line 129, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation li.logo.nav-link {
-        display: inline; } }
-  /* line 138, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation .logo img {
-    margin-bottom: -0.66667em;
-    max-height: 2em;
-    opacity: .6; }
-  /* line 146, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation li.more.nav-link {
-    padding-right: 0; }
-    @media screen and (min-width: 53.75em) {
-      /* line 146, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation li.more.nav-link {
-        padding-right: 1em; } }
-    /* line 153, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation li.more.nav-link > ul > li:first-child a {
-      padding-top: 1em; }
-    /* line 157, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation li.more.nav-link a {
-      margin-right: 1em; }
-    /* line 161, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation li.more.nav-link > a {
-      padding-right: 0.6em; }
-    /* line 165, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation li.more.nav-link > a:after {
-      position: absolute;
-      top: auto;
-      right: -0.4em;
-      bottom: auto;
-      left: auto;
-      color: rgba(51, 51, 51, 0.7);
-      content: '\25BE'; }
-  /* line 172, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation li.more {
-    overflow: visible;
-    padding-right: 0; }
-    /* line 176, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation li.more a {
-      padding-right: 1em; }
-    /* line 180, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation li.more > a {
-      padding-right: 1.6em;
-      position: relative; }
-      @media screen and (min-width: 53.75em) {
-        /* line 180, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-        .centered-navigation li.more > a {
-          margin-right: 1em; } }
-      /* line 188, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation li.more > a:after {
-        content: '›';
-        font-size: 1.2em;
-        position: absolute;
-        right: 0.5em; }
-    /* line 196, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation li.more:hover > .submenu {
-      display: block; }
-    @media screen and (min-width: 53.75em) {
-      /* line 172, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation li.more {
-        padding-right: 1em;
-        position: relative; } }
-  /* line 206, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .centered-navigation ul.submenu {
-    display: none;
-    padding-left: 0; }
-    @media screen and (min-width: 53.75em) {
-      /* line 206, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation ul.submenu {
-        left: -1em;
-        position: absolute;
-        top: 1.5em; } }
-    @media screen and (min-width: 53.75em) {
-      /* line 216, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation ul.submenu .submenu {
-        left: 11.8em;
-        top: 0; } }
-    /* line 223, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .centered-navigation ul.submenu li {
-      display: block;
-      padding-right: 0; }
-      @media screen and (min-width: 53.75em) {
-        /* line 223, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-        .centered-navigation ul.submenu li {
-          line-height: 46.15385px; }
-          /* line 230, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-          .centered-navigation ul.submenu li:first-child > a {
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px; }
-          /* line 235, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-          .centered-navigation ul.submenu li:last-child > a {
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-            padding-bottom: .7em; } }
-      /* line 242, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .centered-navigation ul.submenu li a {
-        background-color: #e53f2e;
-        display: inline-block;
-        text-align: right;
-        width: 100%; }
-        @media screen and (min-width: 53.75em) {
-          /* line 242, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-          .centered-navigation ul.submenu li a {
-            background-color: #e74c3c;
-            padding-left: 1em;
-            text-align: left;
-            width: 12em; } }
+    height: 100%;
+    width: 60%; }
 
-/* line 259, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-.wrapper-for-content-outside-of-footer {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -4em; }
-
-/* line 266, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-html, body {
-  height: 100%; }
-
-/* line 270, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-.footer-2, .push {
-  height: 17em; }
-  @media screen and (min-width: 53.75em) {
-    /* line 270, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .footer-2, .push {
-      height: 4em; } }
-
-/* line 278, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-.footer-2 {
-  background: #e74c3c;
-  padding: 1.5em;
-  width: 100%; }
-  /* line 288, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .footer-2 .footer-logo {
-    margin-right: 1em;
-    margin-bottom: 1em; }
-    @media screen and (min-width: 53.75em) {
-      /* line 288, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .footer-2 .footer-logo {
-        float: left;
-        margin-bottom: 0; } }
-  /* line 298, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .footer-2 .footer-logo img {
-    height: 1.6em; }
-  /* line 302, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .footer-2 ul {
-    margin-bottom: 1em; }
-    @media screen and (min-width: 53.75em) {
-      /* line 302, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .footer-2 ul {
-        float: left;
-        margin-left: 1em;
-        margin-bottom: 0; } }
-  /* line 311, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .footer-2 ul li {
-    padding-right: 1em;
-    font-weight: 800; }
-    @media screen and (min-width: 53.75em) {
-      /* line 311, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .footer-2 ul li {
-        display: inline;
-        text-align: left; } }
-  /* line 321, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .footer-2 ul li a {
-    color: rgba(44, 62, 80, 0.4); }
-    /* line 324, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .footer-2 ul li a:hover {
-      color: #2c3e50; }
-  @media screen and (min-width: 53.75em) {
-    /* line 329, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .footer-2 .footer-secondary-links {
-      float: right; } }
-  /* line 334, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .footer-2 .footer-secondary-links li {
-    font-size: .8em;
-    font-weight: 400; }
-  /* line 339, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-  .footer-2 .footer-secondary-links ul.footer-social {
-    margin-top: 1em; }
-    @media screen and (min-width: 53.75em) {
-      /* line 339, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .footer-2 .footer-secondary-links ul.footer-social {
-        float: right;
-        margin-top: 0; } }
-    /* line 347, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .footer-2 .footer-secondary-links ul.footer-social li {
-      float: left;
-      font-size: 1em;
-      padding-right: .7em; }
-      /* line 352, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .footer-2 .footer-secondary-links ul.footer-social li:last-child {
-        padding-right: 0; }
-    /* line 357, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-    .footer-2 .footer-secondary-links ul.footer-social img {
-      opacity: .7;
-      height: 1.6em;
-      padding: 1px; }
-      /* line 362, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
-      .footer-2 .footer-secondary-links ul.footer-social img:hover {
-        opacity: 1; }
-
+@-webkit-keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+@-moz-keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+@-ms-keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+@-o-keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
+@keyframes progress {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 40px 0px; } }
 /* line 15, /Users/George/ironyard/ruby/portfolio/source/stylesheets/bourbon/addons/_clearfix.scss */
 .grid-items:after {
   content: "";
   display: table;
   clear: both; }
-/* line 393, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+/* line 24, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
 .grid-items .grid-item {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -600,110 +346,418 @@ html, body {
   text-align: center;
   cursor: pointer; }
   @media screen and (min-width: 53.75em) {
-    /* line 393, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 24, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item {
       width: 33.33333%; } }
-  /* line 413, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 44, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item:nth-child(1) {
     background-color: #9d564e;
     box-shadow: inset 0px 0px 1px 2px #7b433d; }
-    /* line 417, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 48, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item:nth-child(1):hover {
       background-color: #7b433d;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
-  /* line 413, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 44, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item:nth-child(2) {
     background-color: #c0392b;
     box-shadow: inset 0px 0px 1px 2px #962d22; }
-    /* line 417, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 48, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item:nth-child(2):hover {
       background-color: #962d22;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
-  /* line 413, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 44, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item:nth-child(3) {
     background-color: #c0392b;
     box-shadow: inset 0px 0px 1px 2px #962d22; }
-    /* line 417, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 48, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item:nth-child(3):hover {
       background-color: #962d22;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
-  /* line 413, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 44, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item:nth-child(4) {
     background-color: #c0392b;
     box-shadow: inset 0px 0px 1px 2px #962d22; }
-    /* line 417, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 48, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item:nth-child(4):hover {
       background-color: #962d22;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
-  /* line 413, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 44, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item:nth-child(5) {
     background-color: #c0392b;
     box-shadow: inset 0px 0px 1px 2px #962d22; }
-    /* line 417, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 48, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item:nth-child(5):hover {
       background-color: #962d22;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
-  /* line 413, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 44, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item:nth-child(6) {
     background-color: #c0392b;
     box-shadow: inset 0px 0px 1px 2px #962d22; }
-    /* line 417, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 48, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item:nth-child(6):hover {
       background-color: #962d22;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
-  /* line 413, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 44, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item:nth-child(7) {
     background-color: #c0392b;
     box-shadow: inset 0px 0px 1px 2px #962d22; }
-    /* line 417, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 48, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item:nth-child(7):hover {
       background-color: #962d22;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
-/* line 427, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+/* line 58, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
 .grid-items .grid-item img {
   display: block;
   height: 3em;
   margin: auto;
   margin-bottom: 1em; }
-/* line 434, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+/* line 65, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
 .grid-items .grid-item h1 {
   color: white;
   font-size: 1.3em;
   margin-bottom: .4em; }
-/* line 440, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+/* line 71, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
 .grid-items .grid-item p {
   margin: auto;
   color: rgba(255, 255, 255, 0.7); }
   @media screen and (min-width: 40em) {
-    /* line 440, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+    /* line 71, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
     .grid-items .grid-item p {
       max-width: 70%; } }
 @media screen and (min-width: 53.75em) {
-  /* line 448, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 79, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item-big {
     width: 66.66667%; } }
 @media screen and (min-width: 40em) {
-  /* line 452, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+  /* line 83, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
   .grid-items .grid-item-big p {
     max-width: 60%; } }
-/* line 459, /Users/George/ironyard/ruby/portfolio/source/stylesheets/all.css.scss */
+/* line 90, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_grid.css.scss */
 .grid-items .grid-item-image {
   background: url(/images/lake-transparent.png);
   background-color: #9d564e;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover; }
+
+/* line 2, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+.wrapper-for-content-outside-of-footer {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em; }
+
+/* line 9, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+html, body {
+  height: 100%; }
+
+/* line 13, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+.footer-2, .push {
+  height: 17em; }
+  @media screen and (min-width: 53.75em) {
+    /* line 13, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+    .footer-2, .push {
+      height: 4em; } }
+
+/* line 21, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+.footer-2 {
+  background: #e74c3c;
+  padding: 1.5em;
+  width: 100%; }
+  /* line 31, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+  .footer-2 .footer-logo {
+    margin-right: 1em;
+    margin-bottom: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 31, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+      .footer-2 .footer-logo {
+        float: left;
+        margin-bottom: 0; } }
+  /* line 41, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+  .footer-2 .footer-logo img {
+    height: 1.6em; }
+  /* line 45, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+  .footer-2 ul {
+    margin-bottom: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 45, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+      .footer-2 ul {
+        float: left;
+        margin-left: 1em;
+        margin-bottom: 0; } }
+  /* line 54, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+  .footer-2 ul li {
+    padding-right: 1em;
+    font-weight: 800; }
+    @media screen and (min-width: 53.75em) {
+      /* line 54, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+      .footer-2 ul li {
+        display: inline;
+        text-align: left; } }
+  /* line 64, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+  .footer-2 ul li a {
+    color: rgba(44, 62, 80, 0.4); }
+    /* line 67, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+    .footer-2 ul li a:hover {
+      color: #2c3e50; }
+  @media screen and (min-width: 53.75em) {
+    /* line 72, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+    .footer-2 .footer-secondary-links {
+      float: right; } }
+  /* line 77, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+  .footer-2 .footer-secondary-links li {
+    font-size: .8em;
+    font-weight: 400; }
+  /* line 82, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+  .footer-2 .footer-secondary-links ul.footer-social {
+    margin-top: 1em; }
+    @media screen and (min-width: 53.75em) {
+      /* line 82, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+      .footer-2 .footer-secondary-links ul.footer-social {
+        float: right;
+        margin-top: 0; } }
+    /* line 90, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+    .footer-2 .footer-secondary-links ul.footer-social li {
+      float: left;
+      font-size: 1em;
+      padding-right: .7em; }
+      /* line 95, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+      .footer-2 .footer-secondary-links ul.footer-social li:last-child {
+        padding-right: 0; }
+    /* line 100, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+    .footer-2 .footer-secondary-links ul.footer-social img {
+      opacity: .7;
+      height: 1.6em;
+      padding: 1px; }
+      /* line 105, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_footer.css.scss */
+      .footer-2 .footer-secondary-links ul.footer-social img:hover {
+        opacity: 1; }
+
+/* line 2, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+.centered-navigation {
+  background-color: #e74c3c;
+  border-bottom: 1px solid #e43321;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  height: 60px;
+  width: 100%;
+  z-index: 9999; }
+  /* line 24, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation .mobile-logo {
+    display: inline;
+    float: left;
+    max-height: 60px;
+    padding-left: 1em; }
+    /* line 30, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation .mobile-logo img {
+      max-height: 60px;
+      opacity: .6;
+      padding: .8em 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 24, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation .mobile-logo {
+        display: none; } }
+  /* line 41, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation .centered-navigation-menu-button {
+    color: rgba(51, 51, 51, 0.7);
+    display: block;
+    float: right;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    padding-right: 1em;
+    text-transform: uppercase; }
+    @media screen and (min-width: 53.75em) {
+      /* line 41, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation .centered-navigation-menu-button {
+        display: none; } }
+    /* line 55, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation .centered-navigation-menu-button:hover {
+      color: #333; }
+  /* line 62, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation .centered-navigation-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 999; }
+    /* line 15, /Users/George/ironyard/ruby/portfolio/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .centered-navigation .centered-navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 15, /Users/George/ironyard/ruby/portfolio/source/stylesheets/bourbon/addons/_clearfix.scss */
+    .centered-navigation .centered-navigation-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
+  /* line 69, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation ul.centered-navigation-menu {
+    -webkit-transform-style: preserve-3d;
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 99999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 69, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation ul.centered-navigation-menu {
+        display: block;
+        text-align: center; } }
+  @media screen and (min-width: 53.75em) {
+    /* line 87, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation .nav-link:first-child {
+      margin-left: 2.2em; } }
+  /* line 93, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation ul li.nav-link {
+    background: #e74c3c;
+    display: block;
+    line-height: 60px;
+    overflow: hidden;
+    padding-right: 1em;
+    text-align: right;
+    width: 100%;
+    z-index: 9999; }
+    @media screen and (min-width: 53.75em) {
+      /* line 93, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation ul li.nav-link {
+        background: transparent;
+        display: inline;
+        line-height: 60px; }
+        /* line 108, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+        .centered-navigation ul li.nav-link a {
+          padding-right: 1em; } }
+    /* line 113, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation ul li.nav-link a {
+      color: rgba(51, 51, 51, 0.7);
+      display: inline-block; }
+      /* line 118, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation ul li.nav-link a:hover {
+        color: #333; }
+  /* line 124, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation li.logo.nav-link {
+    display: none;
+    line-height: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 124, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation li.logo.nav-link {
+        display: inline; } }
+  /* line 133, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation .logo img {
+    margin-bottom: -0.66667em;
+    max-height: 2em;
+    opacity: .6; }
+  /* line 141, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation li.more.nav-link {
+    padding-right: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 141, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation li.more.nav-link {
+        padding-right: 1em; } }
+    /* line 148, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation li.more.nav-link > ul > li:first-child a {
+      padding-top: 1em; }
+    /* line 152, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation li.more.nav-link a {
+      margin-right: 1em; }
+    /* line 156, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation li.more.nav-link > a {
+      padding-right: 0.6em; }
+    /* line 160, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation li.more.nav-link > a:after {
+      position: absolute;
+      top: auto;
+      right: -0.4em;
+      bottom: auto;
+      left: auto;
+      color: rgba(51, 51, 51, 0.7);
+      content: '\25BE'; }
+  /* line 167, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation li.more {
+    overflow: visible;
+    padding-right: 0; }
+    /* line 171, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation li.more a {
+      padding-right: 1em; }
+    /* line 175, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation li.more > a {
+      padding-right: 1.6em;
+      position: relative; }
+      @media screen and (min-width: 53.75em) {
+        /* line 175, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+        .centered-navigation li.more > a {
+          margin-right: 1em; } }
+      /* line 183, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation li.more > a:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: 0.5em; }
+    /* line 191, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation li.more:hover > .submenu {
+      display: block; }
+    @media screen and (min-width: 53.75em) {
+      /* line 167, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation li.more {
+        padding-right: 1em;
+        position: relative; } }
+  /* line 201, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+  .centered-navigation ul.submenu {
+    display: none;
+    padding-left: 0; }
+    @media screen and (min-width: 53.75em) {
+      /* line 201, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation ul.submenu {
+        left: -1em;
+        position: absolute;
+        top: 1.5em; } }
+    @media screen and (min-width: 53.75em) {
+      /* line 211, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation ul.submenu .submenu {
+        left: 11.8em;
+        top: 0; } }
+    /* line 218, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+    .centered-navigation ul.submenu li {
+      display: block;
+      padding-right: 0; }
+      @media screen and (min-width: 53.75em) {
+        /* line 218, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+        .centered-navigation ul.submenu li {
+          line-height: 46.15385px; }
+          /* line 225, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+          .centered-navigation ul.submenu li:first-child > a {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px; }
+          /* line 230, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+          .centered-navigation ul.submenu li:last-child > a {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding-bottom: .7em; } }
+      /* line 237, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+      .centered-navigation ul.submenu li a {
+        background-color: #e53f2e;
+        display: inline-block;
+        text-align: right;
+        width: 100%; }
+        @media screen and (min-width: 53.75em) {
+          /* line 237, /Users/George/ironyard/ruby/portfolio/source/stylesheets/partials/_header.css.scss */
+          .centered-navigation ul.submenu li a {
+            background-color: #e74c3c;
+            padding-left: 1em;
+            text-align: left;
+            width: 12em; } }
