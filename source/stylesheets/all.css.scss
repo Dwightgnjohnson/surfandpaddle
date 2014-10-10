@@ -1,0 +1,16 @@
+@import "bourbon";
+@import "base/base";
+@import "neat/neat";
+@import "bourbon/bourbon";
+
+@import "partials/hero";
+
+html {
+  background: url(http://i1370.photobucket.com/albums/ag270/DwightGNJohnson/surf-and-paddle_zpsdd037abb.png) no-repeat;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+body {
+  margin:0;}
