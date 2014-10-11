@@ -2,14 +2,11 @@
   @include outer-container;
   margin:0;padding:0;
   margin:60px auto;
-  background:$base-background-color;
-  height:800px;
+  height:900px;
 
   article {
     width:620px;
     margin-left:56px;
-    border:thin solid black;
-    background:$base-background-color;
     float:left;
     height:790px;
 
@@ -22,9 +19,9 @@
     }
     .byline {
       padding:.3em .2em;
-
       display:block;
       height:60px;
+      margin-bottom:2px;
       .author {
         float:left;
         padding:0;
@@ -58,7 +55,77 @@
         text-decoration: underline;
       }
     }
+    section.articlecontent {
+      p {
+        font-weight:700;
+        line-height:26px;
+        margin-bottom:25px;
+        color:#aaafb3;
+      }
+      blockquote {
+        text-transform: uppercase;
+        font-size:26px;
+        font-weight:600;
+        margin:0;padding:0;
+        padding:10px .8em;
+        margin-left:5px;
+        margin-bottom:25px;
+        border-left:2px grey solid;
+      }
+    }
+    section.commentsshare {
+          margin-top:-5px;
+      ul {
+        background:blue;
+        display:block;
+        height:30px;
+        float:left;
+        margin-left: 4px;
 
+        li {
+          display:block;
+          float:left;
+          margin-right:5px;
+          img {
+            margin:7px 0 0 9px;
+          }
+          p {
+            color:white;
+            font-size:12px;
+            font-weight:700;
+            margin:5px auto;
+            padding:0 9px;
+          }
+        }
+        li:nth-child(1) {
+          background:#5b666c;
+          width:33px;
+          height:30px;
+        }
+      }
+      ul.readcomments {
+        background:#a3b3c2;
+      }
+      ul.readlater {
+        background:#a3b3c2;
+        margin-left:10px;
+        li:nth-child(2) {
+          width:85px;
+        }
+      }
+      ul.sharelater {
+        background:#1371b9;
+        margin-left:10px;
+        li:nth-child(1) {
+          background:#123752;
+        }
+        li:nth-child(2) {
+          p {
+            padding-right:11px;
+          }
+        }
+      }
+    }
   }
   aside {
     border:thin solid black;
