@@ -2,7 +2,7 @@
 title: Surf and Paddle
 ---
 <main id="maincontent">
-  <article>
+  <article class="mainarticle">
     <h1>A fantastic Engaging headline goes here</h1>
     <div class="byline">
       <address class="author">
@@ -43,15 +43,22 @@ title: Surf and Paddle
 </article>
 
 <aside>
-  <section class="author-aside">
-    <%= image_tag 'images/profilepic84x84.gif' %>
-    <h3>Anne Marie</h3>
-    <ul>
+  <section class="authoraside">
+    <%= image_tag 'images/profilepic84x84.gif', :class => 'asideprofile' %>
+    <h1>Anne Marie</h1>
+    <ul class="asidesocialmedia">
       <li>Twitter</li>
-      <li>Facebook</li>
+      <li>Facbook</li>
       <li>Instagram</li>
-
     </ul>
+
+    <%= image_tag 'images/280x300.gif', :class => 'asidead' %>
+    <a class="asideadlink" href="#">About This Ad</a>
+
+    <article class="asidearticle">
+      <h2>Sidebard Section Heading</h2>
+      <p>Cillum vegan mustache cray, Wes Anderson Kickstarter sunt. Church-key aesthetic ut fashion axe, cillum culpa VHS. Ea freegan cardigan, bespoke Brooklyn vero vinyl PBR reprehenderit actually eiusmod exercitation aesthetic laboris. Dolore Etsy stumptown, magna cred officia 3 wolf moon.</p>
+    </article>
   </section>
 
 </aside>
