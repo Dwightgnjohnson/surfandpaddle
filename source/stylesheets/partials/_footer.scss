@@ -1,0 +1,52 @@
+footer.mainfooter {
+  display: block;
+  margin-top:5px;
+
+  header h1  {
+    font-weight:normal;
+    text-transform: uppercase;
+    text-align:center;
+    font-size:65px;
+    font-weight:400;
+    padding:4px;
+  }
+  section.footer4imageslink {
+    margin-top:30px;
+    img {
+      width:325px;height:332px;
+      float:left;
+    }
+  }
+  footer.footeroffooter {
+    background:#083451;
+    display:block;
+    color:#a1bcd1;
+    font-weight:700;
+    section.brandcopyright {
+      width:60%;
+      float:left;
+      img.ironyardlogo {
+        margin:10px 0 0 151px;
+        float:left;
+      }
+      small.copyright {
+        float:left;
+        font-size:12.5px;
+        margin: 37px 0 0 5px;
+      }
+    }
+    nav.footernav {
+      width:40%;
+      float:left;
+      padding:32px;
+      ul li {
+        display:inline;
+        color:#a1bcd1;
+        a {
+          font-size:13px;
+          color:#a1bcd1;
+        }
+      }
+    }
+  }
+}
