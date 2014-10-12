@@ -550,6 +550,63 @@ input[type="submit"] {
         font-weight: 600;
         font-size: 14px; }
 
+/* line 192, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+.hrdivider {
+  margin-top: -11px; }
+
+/* line 1, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+footer.mainfooter {
+  display: block;
+  margin-top: 5px; }
+  /* line 5, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+  footer.mainfooter header h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 400;
+    padding: 4px; }
+  /* line 13, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+  footer.mainfooter section.footer4imageslink {
+    margin-top: 30px; }
+    /* line 15, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+    footer.mainfooter section.footer4imageslink img {
+      width: 325px;
+      height: 332px;
+      float: left; }
+  /* line 20, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+  footer.mainfooter footer.footeroffooter {
+    background: #083451;
+    display: block;
+    color: #a1bcd1;
+    font-weight: 700; }
+    /* line 25, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+    footer.mainfooter footer.footeroffooter section.brandcopyright {
+      width: 60%;
+      float: left; }
+      /* line 28, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+      footer.mainfooter footer.footeroffooter section.brandcopyright img.ironyardlogo {
+        margin: 10px 0 0 151px;
+        float: left; }
+      /* line 32, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+      footer.mainfooter footer.footeroffooter section.brandcopyright small.copyright {
+        float: left;
+        font-size: 12.5px;
+        margin: 37px 0 0 5px; }
+    /* line 38, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+    footer.mainfooter footer.footeroffooter nav.footernav {
+      width: 40%;
+      float: left;
+      padding: 32px; }
+      /* line 42, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+      footer.mainfooter footer.footeroffooter nav.footernav ul li {
+        display: inline;
+        color: #a1bcd1; }
+        /* line 45, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+        footer.mainfooter footer.footeroffooter nav.footernav ul li a {
+          font-size: 13px;
+          color: #a1bcd1; }
+
 /* line 10, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/all.css.scss */
 html {
   background: url(http://i1370.photobucket.com/albums/ag270/DwightGNJohnson/surf-and-paddle_zpsdd037abb.png) no-repeat;
