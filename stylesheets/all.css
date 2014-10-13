@@ -30,7 +30,7 @@ input[type="submit"] {
 /* line 1, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/base/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: rgba(255, 0, 0, 0.3);
+  background-color: white;
   color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
@@ -271,8 +271,10 @@ input[type="submit"] {
 
 /* line 1, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
 .hero {
-  height: 524px; }
-  /* line 17, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+  width: 1300px;
+  height: 524px;
+  background: linear-gradient(rgba(20, 118, 190, 0.6), rgba(22, 84, 143, 0.6)), url("../images/herowaves1300x524.jpg") center center no-repeat; }
+  /* line 9, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
   .hero .hero-inner {
     text-transform: uppercase;
     height: 524px;
@@ -283,7 +285,7 @@ input[type="submit"] {
       content: "";
       display: table;
       clear: both; }
-    /* line 23, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+    /* line 15, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
     .hero .hero-inner section {
       width: 1030px;
       margin: 0 auto; }
@@ -292,7 +294,7 @@ input[type="submit"] {
         content: "";
         display: table;
         clear: both; }
-    /* line 29, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+    /* line 21, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
     .hero .hero-inner section header {
       float: left;
       display: block;
@@ -301,18 +303,18 @@ input[type="submit"] {
       /* line 38, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/neat/grid/_span-columns.scss */
       .hero .hero-inner section header:last-child {
         margin-right: 0; }
-      /* line 31, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+      /* line 23, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
       .hero .hero-inner section header img {
         margin: 0;
         padding: 0;
         margin: 6px 0 0 2px; }
-      /* line 32, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+      /* line 24, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
       .hero .hero-inner section header p.blog {
         margin: -58px 0 0 60px;
         font-weight: bold;
         font-size: 1em;
         line-spacing: 0; }
-    /* line 39, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+    /* line 31, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
     .hero .hero-inner section nav {
       float: left;
       display: block;
@@ -328,28 +330,29 @@ input[type="submit"] {
       /* line 38, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/neat/grid/_span-columns.scss */
       .hero .hero-inner section nav:last-child {
         margin-right: 0; }
-      /* line 48, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+      /* line 40, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
       .hero .hero-inner section nav ul li {
         display: inline;
         padding-left: 0px;
         font-family: 'Oswald';
         font-weight: 700; }
-      /* line 54, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+      /* line 46, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
       .hero .hero-inner section nav ul li:nth-child(1) {
         margin-right: 10px; }
-      /* line 57, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+      /* line 49, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
       .hero .hero-inner section nav ul li:nth-child(3) {
         height: 17px;
         width: 15px; }
-    /* line 62, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+    /* line 54, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
     .hero .hero-inner h1 {
       font-size: 111px;
       line-height: 60px;
       margin: 202px 0 0 0;
       text-align: center;
       font-family: 'myriad pro';
-      font-weight: normal; }
-    /* line 70, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
+      font-weight: normal;
+      color: white; }
+    /* line 63, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_hero.scss */
     .hero .hero-inner h2 {
       font-family: 'Open Sans';
       text-align: center;
@@ -398,40 +401,65 @@ input[type="submit"] {
         float: left;
         padding: 0; }
       /* line 30, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
-      #maincontent article.mainarticle .byline .author img {
+      #maincontent article.mainarticle .byline .author
+      div.tint {
+        position: relative;
+        float: left;
+        cursor: pointer;
+        width: 23px;
+        height: 23px;
+        margin-right: .4em; }
+      /* line 38, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      #maincontent article.mainarticle .byline div.tint:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        background: rgba(20, 118, 190, 0.5);
+        -moz-transition: background .3s linear;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear; }
+      /* line 53, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      #maincontent article.mainarticle .byline img {
         width: 23px;
         height: 23px;
         border-radius: 50%;
-        margin-right: .4em; }
-      /* line 35, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+        margin-right: .4em;
+        background: linear-gradient(rgba(20, 118, 190, 0.9), rgba(22, 84, 143, 0.9)); }
+      /* line 61, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent article.mainarticle .byline .author a {
         font-size: 12px;
         font-weight: 700;
         font-style: normal; }
-        /* line 40, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+        /* line 66, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
         #maincontent article.mainarticle .byline .author a .name {
           padding: 0;
           display: block;
           margin: auto 3px;
           float: right;
           padding-top: 5px; }
-      /* line 47, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 73, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent article.mainarticle .byline .date {
         font-weight: 700;
         margin-left: 9px;
         float: left;
         font-size: .8em;
         padding-top: 5px; }
-      /* line 54, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 80, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent article.mainarticle .byline time {
         text-decoration: underline; }
-    /* line 59, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+    /* line 85, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
     #maincontent article.mainarticle section.articlecontent p {
       font-weight: 700;
       line-height: 26px;
       margin-bottom: 25px;
       color: #aaafb3; }
-    /* line 65, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+    /* line 91, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
     #maincontent article.mainarticle section.articlecontent blockquote {
       text-transform: uppercase;
       font-size: 26px;
@@ -441,64 +469,88 @@ input[type="submit"] {
       padding: 10px .8em;
       margin-left: 5px;
       margin-bottom: 25px;
-      border-left: 2px grey solid; }
-    /* line 77, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      border-left: 2px gray solid;
+      color: #5b98c5; }
+    /* line 104, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
     #maincontent article.mainarticle section.commentsshare ul {
-      background: blue;
       display: block;
       height: 30px;
       float: left;
       margin-left: 4px; }
-      /* line 84, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 110, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent article.mainarticle section.commentsshare ul li {
         display: block;
         float: left;
         margin-right: 5px; }
-        /* line 88, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+        /* line 114, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
         #maincontent article.mainarticle section.commentsshare ul li img {
           margin: 7px 0 0 9px; }
-        /* line 91, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+        /* line 117, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
         #maincontent article.mainarticle section.commentsshare ul li p {
           color: white;
           font-size: 12px;
           font-weight: 700;
           margin: 5px auto;
           padding: 0 9px; }
-      /* line 99, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 125, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent article.mainarticle section.commentsshare ul li:nth-child(1) {
         background: #5b666c;
         width: 33px;
         height: 30px; }
-    /* line 105, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+    /* line 131, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
     #maincontent article.mainarticle section.commentsshare ul.readcomments {
       background: #a3b3c2; }
-    /* line 108, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+    /* line 134, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
     #maincontent article.mainarticle section.commentsshare ul.readlater {
       background: #a3b3c2;
       margin-left: 10px; }
-      /* line 111, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 137, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent article.mainarticle section.commentsshare ul.readlater li:nth-child(2) {
         width: 85px; }
-    /* line 115, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+    /* line 141, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
     #maincontent article.mainarticle section.commentsshare ul.sharelater {
       background: #1371b9;
       margin-left: 10px; }
-      /* line 118, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 144, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent article.mainarticle section.commentsshare ul.sharelater li:nth-child(1) {
         background: #123752; }
-      /* line 122, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 148, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent article.mainarticle section.commentsshare ul.sharelater li:nth-child(2) p {
         padding-right: 11px; }
-  /* line 129, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+  /* line 155, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
   #maincontent aside {
     width: 280px;
     float: right;
     margin-right: 52px;
     height: 890px; }
-    /* line 135, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+    /* line 161, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
     #maincontent aside section.authoraside {
       width: 100%; }
-      /* line 137, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 163, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      #maincontent aside section.authoraside div.tint {
+        position: relative;
+        cursor: pointer;
+        width: 85px;
+        height: 85px;
+        margin: 0 auto;
+        margin-top: 22px;
+        margin-bottom: 11px; }
+      /* line 171, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      #maincontent aside section.authoraside div.tint:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        background: rgba(20, 118, 190, 0.5);
+        -moz-transition: background .3s linear;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear; }
+      /* line 186, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent aside section.authoraside img.asideprofile {
         display: block;
         margin: 0px auto;
@@ -507,28 +559,51 @@ input[type="submit"] {
         width: 85px;
         height: 85px;
         border-radius: 50%; }
-      /* line 145, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 194, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent aside section.authoraside h1 {
         text-transform: uppercase;
         font-family: 'open sans';
         font-weight: 600;
         font-size: 16px;
-        text-align: center; }
-      /* line 152, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+        text-align: center;
+        color: #5b98c5; }
+      /* line 202, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent aside section.authoraside ul.asidesocialmedia {
         width: 99%;
         text-align: center;
         font-size: 12px;
         font-weight: 700;
         margin-top: 3px; }
-        /* line 158, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+        /* line 209, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
         #maincontent aside section.authoraside ul.asidesocialmedia li {
           display: inline;
           padding: 0 8px; }
-      /* line 163, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
-      #maincontent aside section.authoraside img.asidead {
+          /* line 212, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+          #maincontent aside section.authoraside ul.asidesocialmedia li a {
+            margin: 0;
+            padding: 0; }
+      /* line 218, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      #maincontent aside section.authoraside div.tint280x300 {
+        position: relative;
+        cursor: pointer;
+        width: 280px;
+        height: 300px;
         margin-top: 51px; }
-      /* line 166, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 224, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      #maincontent aside section.authoraside div.tint280x300:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(20, 118, 190, 0.5);
+        -moz-transition: background .3s linear;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear; }
+      /* line 241, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent aside section.authoraside .asideadlink {
         width: 100%;
         float: right;
@@ -537,20 +612,21 @@ input[type="submit"] {
         font-size: 12px;
         font-weight: 700;
         padding-right: 2px; }
-      /* line 176, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+      /* line 251, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent aside section.authoraside article.asidearticle h2 {
         text-transform: uppercase;
         margin-top: 65px;
         font-size: 17px;
-        font-weight: 700; }
-      /* line 182, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+        font-weight: 700;
+        color: #5b98c5; }
+      /* line 258, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
       #maincontent aside section.authoraside article.asidearticle p {
         margin-top: 6px;
         line-height: 24px;
         font-weight: 600;
         font-size: 14px; }
 
-/* line 192, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
+/* line 268, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_main.scss */
 .hrdivider {
   margin-top: -11px; }
 
@@ -565,57 +641,78 @@ footer.mainfooter {
     text-align: center;
     font-size: 65px;
     font-weight: 400;
-    padding: 4px; }
-  /* line 13, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+    padding: 4px;
+    color: #06324d; }
+  /* line 14, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
   footer.mainfooter section.footer4imageslink {
     margin-top: 30px; }
-    /* line 15, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
-    footer.mainfooter section.footer4imageslink img {
+    /* line 16, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+    footer.mainfooter section.footer4imageslink a.tint325x332 {
+      position: relative;
+      cursor: pointer;
       width: 325px;
       height: 332px;
+      padding: 0;
+      margin: 0;
       float: left; }
-  /* line 20, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
-  footer.mainfooter footer.footeroffooter {
-    background: #083451;
+      /* line 22, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+      footer.mainfooter section.footer4imageslink a.tint325x332:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(20, 118, 190, 0.5);
+        -moz-transition: background .3s linear;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear; }
+      /* line 36, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+      footer.mainfooter section.footer4imageslink a.tint325x332 img {
+        width: 325px;
+        height: 332px; }
+        /* line 38, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+        footer.mainfooter section.footer4imageslink a.tint325x332 img:hover {
+          display: hidden; }
+  /* line 44, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+  footer.mainfooter div.footeroffooter {
     display: block;
-    color: #a1bcd1;
-    font-weight: 700; }
-    /* line 25, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
-    footer.mainfooter footer.footeroffooter section.brandcopyright {
+    font-weight: 700;
+    width: 100%;
+    background: #083352; }
+    /* line 49, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+    footer.mainfooter div.footeroffooter section.brandcopyright {
       width: 60%;
-      float: left; }
-      /* line 28, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
-      footer.mainfooter footer.footeroffooter section.brandcopyright img.ironyardlogo {
+      float: left;
+      background: #083352;
+      height: 90px; }
+      /* line 54, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+      footer.mainfooter div.footeroffooter section.brandcopyright img.ironyardlogo {
         margin: 10px 0 0 151px;
         float: left; }
-      /* line 32, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
-      footer.mainfooter footer.footeroffooter section.brandcopyright small.copyright {
+      /* line 58, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+      footer.mainfooter div.footeroffooter section.brandcopyright small.copyright {
         float: left;
         font-size: 12.5px;
-        margin: 37px 0 0 5px; }
-    /* line 38, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
-    footer.mainfooter footer.footeroffooter nav.footernav {
+        margin: 37px 0 0 5px;
+        color: #a1bcd1; }
+    /* line 65, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+    footer.mainfooter div.footeroffooter nav.footernav {
+      background: #083352;
       width: 40%;
       float: left;
-      padding: 32px; }
-      /* line 42, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
-      footer.mainfooter footer.footeroffooter nav.footernav ul li {
+      padding: 32px;
+      height: 90px; }
+      /* line 71, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+      footer.mainfooter div.footeroffooter nav.footernav ul li {
         display: inline;
         color: #a1bcd1; }
-        /* line 45, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
-        footer.mainfooter footer.footeroffooter nav.footernav ul li a {
+        /* line 74, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/partials/_footer.scss */
+        footer.mainfooter div.footeroffooter nav.footernav ul li a {
           font-size: 13px;
           color: #a1bcd1; }
-
-/* line 10, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/all.css.scss */
-html {
-  background: url(http://i1370.photobucket.com/albums/ag270/DwightGNJohnson/surf-and-paddle_zpsdd037abb.png) no-repeat;
-  background-position: center top;
-  -webkit-background-size: 1300px;
-  -moz-background-size: 1300px;
-  -o-background-size: 1300px;
-  background-size: 1300px;
-  height: 2104px; }
 
 /* line 20, /Users/George/ironyard/ruby/surfandpaddle/source/stylesheets/all.css.scss */
 body {
