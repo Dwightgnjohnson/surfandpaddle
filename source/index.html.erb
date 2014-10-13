@@ -7,7 +7,7 @@ title: Surf and Paddle
     <div class="byline">
       <address class="author">
         <a rel="author" href="#">
-          <%= image_tag 'images/profilepic84x84.gif' %> <span class="name">Anne Maria</span></a>
+          <div class="tint"><%= image_tag 'images/profileimage.jpeg' %></div> <span class="name">Anne Maria</span></a>
       </address>
       <div class="date">
             on <time pubdate datetime="2014-10-07" title="Oct. 7th 9:22pm">Monday Oct. 7th 9:22pm</time></div>
@@ -44,15 +44,15 @@ title: Surf and Paddle
 
 <aside>
   <section class="authoraside">
-    <%= image_tag 'images/profilepic84x84.gif', :class => 'asideprofile' %>
+    <div class=tint><%= image_tag 'images/profileimage.jpeg', :class => 'asideprofile' %></div>
     <h1>Anne Marie</h1>
     <ul class="asidesocialmedia">
-      <li>Twitter</li>
-      <li>Facbook</li>
-      <li>Instagram</li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facbook</a></li>
+      <li><a href="#">Instagram</a></li>
     </ul>
 
-    <%= image_tag 'images/280x300.gif', :class => 'asidead' %>
+    <div class="tint280x300"><%= image_tag 'http://lorempixel.com/280/300/sports/3/', :class => 'asidead' %></div>
     <a class="asideadlink" href="#">About This Ad</a>
 
     <article class="asidearticle">
